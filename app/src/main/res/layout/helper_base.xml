@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="@dimen/dimen_16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/helper_notfound"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_empty_data"/>
+        <TextView
+            android:layout_centerVertical="true"
+            style="@style/Text.Judul"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:text="Tambahkan Mahasiswa Baru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_centerVertical="true"
+            style="@style/Text.Paragraph"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:textAlignment="center"
+            android:text="Cukup isi Nama dan NIM saja, klik Tambahkan Mahasiswa dibawah ini"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/btn_tambah_mahasiswa"
+            android:layout_centerVertical="true"
+            style="@style/Text.Title"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:textAlignment="center"
+            android:clickable="true"
+            android:textColor="@color/colorPrimary"
+            android:text="Tambahkan Mahasiswa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/helper_search_notfound"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_empty_search"/>
+        <TextView
+            android:layout_centerVertical="true"
+            style="@style/Text.Judul"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:text="Tidak ditemukan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_subtitle_search_notfound"
+            android:layout_centerVertical="true"
+            style="@style/Text.Paragraph"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:textAlignment="center"
+            android:text="Kata kunci yang Anda cari tidak tersedia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_56dp"
+    android:stateListAnimator="@null"
+    android:elevation="0dp"
+    style="@style/AppTheme.AppBarCustom">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/AppTheme.AppBarCustom"
+            app:titleTextColor="@color/grey_700"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:hint="Cari mahasiswa disini"
+                android:visibility="gone"
+                android:id="@+id/edt_search"
+                style="@style/EditText.Search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </androidx.appcompat.widget.Toolbar>
+        <TextView
+            android:id="@+id/tv_title"
+            android:text="@string/app_name"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            style="@style/Text.Judul.OneRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/grey_400"/>
+    </RelativeLayout>
+</com.google.android.material.appbar.AppBarLayout>
